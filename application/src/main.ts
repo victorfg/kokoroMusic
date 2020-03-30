@@ -10,3 +10,6 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+var a = ``;
+var b = `2`;
