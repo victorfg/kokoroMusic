@@ -1,40 +1,17 @@
 # kokoroMusic
 
-KokoroMusic is a music player application
+KokoroMusic is a music player application. It allows user to play, pause the audio track. Also, user can play next or previous track. In addition to that, user can change the current playing time using a seekbar.
 
-## Getting Started
+## Running the prototype
 
-Before you begin, make sure your development environment includes Node.js® and an npm package manager.
-
-### Prerequisites
-
-Angular requires a current, active LTS, or maintenance LTS version of Node.js. See the engines key for the specific version requirements in our package.json.
-
-**Install Node**
-
-To check your version, run **node -v** in a terminal/console window (To get Node.js, go to nodejs.org)
-
-**Install the Angular CLI globally.**
-
-To install the CLI using npm, open a terminal/console window and enter the following command:
-```
-npm install -g @angular/cli
-```
-
-The Angular CLI includes a server, so that you can easily build and serve your app locally.
-
-* Go to the workspace folder (my-app).
-
-* Launch the server by using the CLI command ng serve, with the --open option.
-
-```
-cd my-app
-ng serve --open
-```
+* `git clone` this repo
+* `cd kokoroMusic/application` and `npm install`
+* run `npm start`
+* open browser on http://localhost:4200/
 
 ## Built With
 
-* [Angular 8](https://angular.io/) - The web framework used
+* [Angular 8](https://angular.io/)
 
 ## Contributing
 
