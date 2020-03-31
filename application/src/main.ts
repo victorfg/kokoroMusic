@@ -13,3 +13,4 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 var a = ``;
 var b = `2`;
+var c = 'Prueba Fran';
