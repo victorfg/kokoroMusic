@@ -3,6 +3,7 @@ export class Cancion{
     nombreCancion: string;
     nombreGrupo: string;
     nombreAlbum: string;
+    fechaCancion: string;
     urlFotoAlbum:string;
     generoMusical:string;
     duracionCancion:string;

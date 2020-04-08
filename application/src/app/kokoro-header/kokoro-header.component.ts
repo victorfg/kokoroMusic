@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kokoro-header.component.css']
 })
 export class KokoroHeaderComponent implements OnInit {
-  title = 'kokoroMusic';
+  title = 'Kokoro Music';
   constructor() { }
 
   ngOnInit(): void {
