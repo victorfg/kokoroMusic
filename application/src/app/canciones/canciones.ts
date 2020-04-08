@@ -1,10 +1,10 @@
 import {Cancion} from './cancion';
 
 export const CANCIONES: Cancion [] = [
-    { id: 1, nombreCancion:'nombreCancion1', nombreGrupo:'nombreGrupo1', nombreAlbum:'nombreAlbum1', urlFotoAlbum:'urlFotoAlbum1', generoMusical:'generoMusical1', duracionCancion:'4:06', fechaCancion: '01-01-2020' },
-    { id: 2, nombreCancion:'nombreCancion2', nombreGrupo:'nombreGrupo2', nombreAlbum:'nombreAlbum2', urlFotoAlbum:'urlFotoAlbum2', generoMusical:'generoMusical2', duracionCancion:'4:01', fechaCancion: '01-01-2020' },
-    { id: 3, nombreCancion:'nombreCancion3', nombreGrupo:'nombreGrupo3', nombreAlbum:'nombreAlbum3', urlFotoAlbum:'urlFotoAlbum3', generoMusical:'generoMusical3', duracionCancion:'2:06', fechaCancion: '01-01-2020' },
-    { id: 4, nombreCancion:'nombreCancion4', nombreGrupo:'nombreGrupo4', nombreAlbum:'nombreAlbum4', urlFotoAlbum:'urlFotoAlbum4', generoMusical:'generoMusical4', duracionCancion:'5:12', fechaCancion: '01-01-2020' },
-    { id: 5, nombreCancion:'nombreCancion5', nombreGrupo:'nombreGrupo5', nombreAlbum:'nombreAlbum5', urlFotoAlbum:'urlFotoAlbum5', generoMusical:'generoMusical5', duracionCancion:'6:09', fechaCancion: '01-01-2020' },
-    { id: 6, nombreCancion:'nombreCancion6', nombreGrupo:'nombreGrupo6', nombreAlbum:'nombreAlbum6', urlFotoAlbum:'urlFotoAlbum6', generoMusical:'generoMusical6', duracionCancion:'7:01', fechaCancion: '01-01-2020' },
+    { id: 1, nombreCancion:'Pausa', nombreGrupo:'Izal', nombreAlbum:'Autoterapia', urlFotoAlbum:'assets\\C.Autoterapia.jpg', generoMusical:'Indie', duracionCancion:'2:53', fechaCancion: '2018' },
+    { id: 2, nombreCancion:'Jaguar', nombreGrupo:'DjRonaldo', nombreAlbum:'A.K.A. The Aztec Mystic', urlFotoAlbum:'assets\\C.Jaguar.jpg', generoMusical:'Electronica', duracionCancion:'6:39', fechaCancion: '1999' },
+    { id: 3, nombreCancion:'One More Time', nombreGrupo:'Daft Punk', nombreAlbum:'Discovery', urlFotoAlbum:'assets\\C.Alive2007.jpg', generoMusical:'Electronica', duracionCancion:'6:11', fechaCancion: '2007' },
+    { id: 4, nombreCancion:'23 de Junio', nombreGrupo:'Vetusta Morla', nombreAlbum:'Mismo sitio distinto lugar', urlFotoAlbum:'assets\\C.23DeJunio.jpg', generoMusical:'Indie', duracionCancion:'3:27', fechaCancion: '2017' },
+    { id: 5, nombreCancion:'Yemen', nombreGrupo:'Kase O', nombreAlbum:'El Circulo', urlFotoAlbum:'assets\\C.ElCirculo.jpg', generoMusical:'Hip Hop / Rap', duracionCancion:'4:22', fechaCancion: '2016' },
+    { id: 6, nombreCancion:'Toxicity', nombreGrupo:'System of a Down', nombreAlbum:'Toxicity', urlFotoAlbum:'assets\\C.Toxicity.jpg', generoMusical:'Heavy Metal', duracionCancion:'3:37', fechaCancion: '2001' },
 ];
