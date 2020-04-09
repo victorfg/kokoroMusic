@@ -1,4 +1,4 @@
-.main-right-div{
+.main-right-div {
     position: relative;
     margin-top: 100px;
     border: 1px solid blue;
@@ -6,4 +6,10 @@
     display: flex;
     justify-content: center;
     color:blue;
+}
+
+.center-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }

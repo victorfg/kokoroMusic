@@ -1,5 +1,14 @@
 <ul>
     <li *ngFor="let cancion of canciones">
-        <span>{{ cancion.nombreCancion}}</span>
+        <img width="120" src="{{ cancion.urlFotoAlbum }}" alt="" />
+        <div class="flex-grow-1 margin-left-25">
+            <div>{{ cancion.nombreCancion}}</div>
+            <div>{{ cancion.nombreGrupo}}</div>
+            <div>{{ cancion.fechaCancion}}</div>
+        </div>
+        <div class="flex-grow-1 margin-left-25">
+            <div>{{ cancion.generoMusical}}</div>
+            <div>{{ cancion.duracionCancion}}</div>
+        </div>
     </li>
 </ul>

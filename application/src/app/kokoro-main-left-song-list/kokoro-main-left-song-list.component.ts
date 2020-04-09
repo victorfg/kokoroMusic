@@ -10,6 +10,7 @@ import { CANCIONES } from '../canciones/canciones';
 export class KokoroMainLeftSongListComponent implements OnInit {
 
   canciones = CANCIONES;
+  //@Output
   constructor() { }
 
   ngOnInit(): void {

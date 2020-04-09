@@ -9,4 +9,11 @@
 .center-title{
     display: flex;
     justify-content: center;
+    margin-top: 25px;
+}
+
+.main-div-items{
+    margin-top: 20px;
+    overflow-y: auto;
+    height: 450px;
 }
