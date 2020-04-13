@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-kokoro-main-left',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kokoro-main-left.component.css']
 })
 export class KokoroMainLeftComponent implements OnInit {
-
+  @Input() allSongs;
+  /*@Output()
+  outputData  = new EventEmitter();*/
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.allSongs = this.allSongs;
+    console.log(this.allSongs);
   }
-
 }

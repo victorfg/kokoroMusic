@@ -10,6 +10,6 @@ export class KokoroMainRightComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
-
 }
