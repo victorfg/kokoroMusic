@@ -11,7 +11,7 @@ KokoroMusic is a music player application. It allows user to play, pause the aud
 
 ## Built With
 
-* [Angular 8](https://angular.io/)
+* [Angular 9](https://angular.io/)
 
 ## Contributing
 
