@@ -1,6 +1,15 @@
+.main-class-div{
+    margin-top: 80px;
+}
+
 .display-flex{
     display: flex;
 }
-.flex-grow-1{
-    flex-grow: 1;
+
+.widht-40{
+    width: 40%;
+}
+
+.widht-60{
+    width: 60%;
 }
