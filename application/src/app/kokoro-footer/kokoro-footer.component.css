@@ -1,8 +1,10 @@
 .main-footer-div{
     position: relative;
     border: 1px solid orange;
-    height: 30vh;
+    height: 11vh;
     display: flex;
     justify-content: center;
     color:orange;
+    background-color: #98D078;
+    align-items: center;
 }

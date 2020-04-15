@@ -1,6 +1,5 @@
 .main-left-div{
     position: relative;
-    border: 1px solid black;
     color:black;
 }
 
@@ -13,5 +12,5 @@
 .main-div-items{
     margin-top: 20px;
     overflow-y: auto;
-    height: 45vh;
+    height: 65vh;
 }

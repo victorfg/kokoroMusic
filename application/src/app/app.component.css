@@ -12,6 +12,9 @@
 
 .widht-60{
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center-title{
@@ -21,9 +24,5 @@
 }
 
 .main-right-div {
-    position: relative;
-    border: 1px solid blue;
-    display: center;
-    justify-content: center;
-    color:blue;
+    color:black;
 }
