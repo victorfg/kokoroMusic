@@ -23,7 +23,7 @@
 .main-right-div {
     position: relative;
     border: 1px solid blue;
-    display: flex;
+    display: center;
     justify-content: center;
     color:blue;
 }

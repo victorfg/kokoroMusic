@@ -7,4 +7,6 @@ export class Cancion{
     urlFotoAlbum:string;
     generoMusical:string;
     duracionCancion:string;
+    urlArtista: string;
+    detalleArtista: string;
 }

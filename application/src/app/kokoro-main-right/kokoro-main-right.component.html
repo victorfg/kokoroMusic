@@ -1,3 +1,12 @@
 <div class="main-div-items">
-    <img width="120" src="{{ canciones[selectedSongId].urlFotoAlbum }}" alt="" />
+    <div align=center>
+        <h2>Detalle</h2>
+        <img width="240" src="{{ canciones[selectedSongId].urlArtista }}" alt="180"/>
+        <p><b>Artista: </b>{{ canciones[selectedSongId].nombreGrupo }}</p>
+        <p><b>Nombre Albúm: </b>{{ canciones[selectedSongId].nombreAlbum }}</p>
+        <p><b>Fecha: </b>{{ canciones[selectedSongId].fechaCancion }}</p>
+        <p><b>Género Musical: </b>{{ canciones[selectedSongId].generoMusical }}</p>
+        <p><b>Info: </b>{{ canciones[selectedSongId].detalleArtista }}</p>
+    </div>
+    
 </div>
