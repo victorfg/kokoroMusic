@@ -1,7 +1,7 @@
 <ul>
     <li *ngFor="let cancion of allSongs" (click)="clickSongItem(cancion)">
-        <img width="120" src="{{ cancion.urlFotoAlbum }}" alt="" />
-        <div class="margin-left-25 widht-50">
+         <img class="img-song"width="120" src="{{ cancion.urlFotoAlbum }}" alt="180" />
+            <div class="margin-left-25 widht-50">
             <div>{{ cancion.nombreCancion}}</div>
             <div>{{ cancion.nombreGrupo}}</div>
             <div>{{ cancion.fechaCancion}}</div>

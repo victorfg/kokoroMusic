@@ -5,16 +5,18 @@ li {
     display: flex;
     align-items: center;
     margin: 0px 0px 15px 0px;
+   }
+.img-song{
+    border-radius: 25px;
 }
-
 .widht-50{
     width: 50%;
-}
+   }
 
 .text-align-end{
     text-align: end;
-    margin-right: 45px;
+    margin-right: 45px; 
 }
 .margin-left-25{
-    margin-left: 25px;
+    margin-left: 25px; 
 }
