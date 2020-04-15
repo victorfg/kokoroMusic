@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Cancion } from './canciones/cancion';
 import { CANCIONES } from './canciones/canciones';
 @Component({
   selector: 'app-root',
@@ -9,7 +8,7 @@ import { CANCIONES } from './canciones/canciones';
 export class AppComponent {
   canciones = CANCIONES;
 
-  constructor() {
+  constructor() {}
 
-  }
+  ngOnInit(){}
 }

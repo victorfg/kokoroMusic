@@ -2,14 +2,15 @@
 
 <div class="main-class-div">
     <div class="display-flex">
-        <div class="flex-grow-1">
+        <div class="widht-40">
             <app-kokoro-main-left [allSongs]="canciones"></app-kokoro-main-left>
         </div>
-        <div class="flex-grow-1">
-            <app-kokoro-main-right></app-kokoro-main-right> 
-        </div>
+        <div class="widht-60">
+            <div class="main-right-div">
+                <div class="center-title">DETALLE</div>           
+                <router-outlet></router-outlet> 
+            </div>       
+       </div>
     </div>
     <app-kokoro-footer></app-kokoro-footer>
 </div>
-
-<router-outlet></router-outlet>

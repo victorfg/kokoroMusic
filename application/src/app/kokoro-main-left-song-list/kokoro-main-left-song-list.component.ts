@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cancion } from '../canciones/cancion';
-//import { CANCIONES } from '../canciones/canciones';
 
 @Component({
     selector: 'app-kokoro-main-left-song-list',
@@ -13,10 +13,12 @@ export class KokoroMainLeftSongListComponent implements OnInit {
 
     @Input() allSongs;
 
-    //@Output() selectedSong = new EventEmitter<Cancion>();
-
-    constructor() { }
+    constructor(private router: Router) { }
 
     ngOnInit() {
+    }
+
+    clickSongItem(selectedSong){
+        this.router.navigate(['/songSelected',selectedSong.id]);
     }
 }

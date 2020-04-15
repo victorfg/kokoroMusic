@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {KokoroHeaderComponent} from './kokoro-header/kokoro-header.component';
+import { KokoroMainRightComponent } from './kokoro-main-right/kokoro-main-right.component';
 
 const routes: Routes = [
-    //{path: 'caca', component: KokoroHeaderComponent}
+    {path: 'songSelected/:id', component: KokoroMainRightComponent}
 ];
 
 @NgModule({
