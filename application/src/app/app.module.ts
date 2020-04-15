@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { KokoroHeaderComponent } from './kokoro-header/kokoro-header.component';
 import { KokoroMainLeftComponent } from './kokoro-main-left/kokoro-main-left.component';
 import { KokoroMainRightComponent } from './kokoro-main-right/kokoro-main-right.component';
@@ -18,7 +19,8 @@ import { KokoroMainLeftSongListComponent } from './kokoro-main-left-song-list/ko
     KokoroMainLeftSongListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
