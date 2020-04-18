@@ -1,11 +1,12 @@
 <div class="main-div-items">
     <div align=center>
-        <img class="img-group"width="250" src="{{ canciones[selectedSongId].urlArtista }}" alt="180"/>
-        <p><b>Artista: </b>{{ canciones[selectedSongId].nombreGrupo }}</p>
-        <p><b>Nombre Albúm: </b>{{ canciones[selectedSongId].nombreAlbum }}</p>
-        <p><b>Fecha: </b>{{ canciones[selectedSongId].fechaCancion }}</p>
-        <p><b>Género Musical: </b>{{ canciones[selectedSongId].generoMusical }}</p>
-        <p><b>Info: </b>{{ canciones[selectedSongId].detalleArtista }}</p>
+        <img class="img-group"width="250" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
+        <p><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</p>
+        <p><b>Nombre Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</p>
+        <p><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</p>
+        <p><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</p>
+        <p><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</p>
     </div>
     
 </div>
+ 

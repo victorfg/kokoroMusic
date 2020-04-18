@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './routing/app-routing.module';
 import { KokoroHeaderComponent } from './kokoro-header/kokoro-header.component';
 import { KokoroMainLeftComponent } from './kokoro-main-left/kokoro-main-left.component';
 import { KokoroMainRightComponent } from './kokoro-main-right/kokoro-main-right.component';

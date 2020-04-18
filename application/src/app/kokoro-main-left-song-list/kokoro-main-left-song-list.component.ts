@@ -15,8 +15,7 @@ export class KokoroMainLeftSongListComponent implements OnInit {
 
     constructor(private router: Router) { }
 
-    ngOnInit() {
-    }
+    ngOnInit() {}
 
     clickSongItem(selectedSong){
         this.router.navigate(['/songSelected',selectedSong.id]);
