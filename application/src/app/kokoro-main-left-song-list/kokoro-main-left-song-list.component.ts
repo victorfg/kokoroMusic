@@ -12,6 +12,7 @@ export class KokoroMainLeftSongListComponent implements OnInit {
     songSelected:Cancion;
 
     @Input() allSongs;
+    @Input() filtro_valor;
 
     constructor(private router: Router) { }
 

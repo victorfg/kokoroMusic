@@ -1,6 +1,10 @@
 <div class="main-left-div">
-    <div class="center-title">LISTA DE REPRODUCCIÓN</div>
+    <div class="center-title">
+       <app-kokoro-searcher (search)="handleSearch($event)"></app-kokoro-searcher>
+    </div>
     <div class="main-div-items">
-        <app-kokoro-main-left-song-list [allSongs]="allSongs"></app-kokoro-main-left-song-list>
+        <app-kokoro-main-left-song-list [filtro_valor]="filtro_valor" 
+            [allSongs]="allSongs">
+        </app-kokoro-main-left-song-list>
     </div>
 </div>

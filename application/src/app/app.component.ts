@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
     canciones = CANCIONES;
-    pathParam: Observable<number>;
+    pathParam: Observable<string>;
     constructor(private routeStateService: RouteStateServiceService) { }
 
     ngOnInit() {

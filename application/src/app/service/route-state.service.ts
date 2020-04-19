@@ -6,16 +6,22 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class RouteStateServiceService {
 
-    private pathParamState = new BehaviorSubject<number>(0);
+    private pathParamState = new BehaviorSubject<string>(null);
 
-    pathParam: Observable<number>;
+    pathParam: Observable<string>;
 
     constructor() {
         this.pathParam = this.pathParamState.asObservable();
     }
+
+    public getMyObs(){
+        return this.pathParamState.asObservable()
+    }
     
-    updatePathParamState(newPathParam: number) {
-        newPathParam --;
-        this.pathParamState.next(newPathParam);
+    updatePathParamState(newPathParam: string) {
+        let numberPathParam = +newPathParam;
+        numberPathParam --;
+        let finalValue = numberPathParam.toString();
+        this.pathParamState.next(finalValue);
     }
 }

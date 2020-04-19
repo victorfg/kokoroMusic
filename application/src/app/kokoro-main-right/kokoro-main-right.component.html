@@ -1,5 +1,5 @@
 <div class="main-div-items">
-    <div align=center>
+    <div align=center *ngIf="canciones[pathParam | async]">
         <img class="img-group"width="250" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
         <p><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</p>
         <p><b>Nombre Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</p>

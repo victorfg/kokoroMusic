@@ -9,4 +9,5 @@ export class Cancion{
     duracionCancion:string;
     urlArtista: string;
     detalleArtista: string;
+    urlCancion:string;
 }

@@ -1,5 +1,33 @@
 <div class="main-footer-div">
-    REPRODUCTOR
+    <div class="img-album" *ngIf="selectedSong != null">
+        <div class="display-flex">
+            <div>
+                <img class="img-group"width="75" src="{{ canciones[selectedSong].urlFotoAlbum }}" alt="180"/>
+            </div>
+            <div class="text-info-song">
+                <div>
+                    {{ canciones[selectedSong].nombreGrupo }}
+                </div>
+                <div>
+                    {{ canciones[selectedSong].nombreCancion }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button (click)="play()">Play</button>
+        <button (click)="pause()">Pause</button>
+        <button (click)="stop()">Stop</button>
+    </div>
+    <div class="center-element margin-left-20">
+        <span>{{currentTimeCalcul}}</span>
+        <input type="range" min="0" max="{{duration}}" [attr.max]="duration" [value]="seek" (input)="setSeekTo($event)">
+        <span>{{durationCalcul}}</span>
+    </div>
+    <div class="center-element margin-left-20">
+        <span>Volumen</span>
+        <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
+    </div>
 </div>
 <div id="footer">
     <footer>     

@@ -16,7 +16,7 @@ import { Observable } from 'rxjs';
 export class KokoroMainRightComponent implements OnInit, OnDestroy {
 
     private destroy = new Subject<void>();
-    pathParam: Observable<number>;
+    pathParam: Observable<string>;
     canciones = CANCIONES;
 
     constructor(private route: ActivatedRoute, private routeStateService: RouteStateServiceService) {}
