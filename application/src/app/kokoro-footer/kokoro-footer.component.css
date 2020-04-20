@@ -1,11 +1,10 @@
 .main-footer-div{
     position: relative;
-    border: 1px solid orange;
     height: 11vh;
     display: flex;
     justify-content: center;
     color:black;
-    background-color: #98D078;
+    background: radial-gradient(ellipse at center, rgba(243,253,236,1) 0%, rgba(177,196,110,1) 100%);
     align-items: center;
 }
 
@@ -33,3 +32,14 @@
     justify-content: center;
     align-items: center;
 }
+.mdl-button{
+    margin-left: 15px;
+    border-radius: 25px;
+    height: 45px;
+}
+.material-icons.md-48{
+    font-size: 45px;
+}
+.material-icons.reproductor{
+    color: #323F34;
+}   

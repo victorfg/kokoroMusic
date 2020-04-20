@@ -1,8 +1,24 @@
 .main-div-items{
     margin-left: 15px;
     margin-right: 15px;
-}
+    text-align: left;
+    }
 
 .img-group{
     border-radius: 25px;
+    margin-bottom: 60px;
+   
+}
+.detalle {
+    font-style: normal;
+    margin-left: 120px;
+    font-family: monospace;
+    
+   
+   
+}
+.material-icons{
+    color: #323F34;
+    vertical-align: middle;
+    font-size: 45px;
 }

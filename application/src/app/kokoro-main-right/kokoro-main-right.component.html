@@ -1,11 +1,18 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <div class="main-div-items">
-    <div align=center *ngIf="canciones[pathParam | async]">
-        <img class="img-group"width="250" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
-        <p><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</p>
-        <p><b>Nombre Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</p>
-        <p><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</p>
-        <p><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</p>
-        <p><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</p>
+    <div *ngIf="canciones[pathParam | async]">
+        <div class=img align=center>
+        <img class="img-group"width="450" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
+        </div>
+        <div class="detalle">
+        <p><i class="material-icons">face</i><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</p>
+        <p><i class="material-icons">album</i><b>Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</p>
+        <p><i class="material-icons">event</i><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</p>
+        <p><i class="material-icons">mic</i><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</p>
+        <p><i class="material-icons">contact_support</i><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</p>
+        </div>
     </div>
     
 </div>

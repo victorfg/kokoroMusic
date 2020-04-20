@@ -2,7 +2,7 @@
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: #98D078;
+  background: radial-gradient(ellipse at center, rgba(243,253,236,1) 0%, rgba(177,196,110,1) 100%);
   color: white;
   font-weight: 600;
 }

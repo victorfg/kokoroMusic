@@ -1,3 +1,10 @@
+<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+<script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 <div class="main-footer-div">
     <div class="img-album" *ngIf="selectedSong != null">
         <div class="display-flex">
@@ -15,9 +22,9 @@
         </div>
     </div>
     <div>
-        <button (click)="play()">Play</button>
-        <button (click)="pause()">Pause</button>
-        <button (click)="stop()">Stop</button>
+        <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="play()"><i class="material-icons md-48 reproductor">play_arrow</i></button>
+        <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="pause()"><i class="material-icons md-48 reproductor">pause</i></button>
+        <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="stop()"><i class="material-icons md-48 reproductor">stop</i></button>
     </div>
     <div class="center-element margin-left-20">
         <span>{{currentTimeCalcul}}</span>
@@ -30,7 +37,7 @@
     </div>
 </div>
 <div id="footer">
-    <footer>     
-        <p [ngStyle]="{'text-align': 'center'}">Kokoro Music &reg;</p>
+    <footer>  
+        <h5 [ngStyle]="{'text-align': 'center'}">Kokoro Music &reg;</h5>
     </footer>
 </div>

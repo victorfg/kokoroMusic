@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex: 1;
+    flex: 2;
+    background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
 }
-
 .widht-40{
-    flex: 1;
+    flex: 2;
 }
 
 .widht-60{
