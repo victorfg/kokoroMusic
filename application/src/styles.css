@@ -6,3 +6,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.mat-form-field-empty.mat-form-field-label {
+    color: rgb(0,150,136);
+    margin-left: 25px;
+    display: none !important;
+}
+
+.main-left-div .material-icons{
+    position: absolute;
+}

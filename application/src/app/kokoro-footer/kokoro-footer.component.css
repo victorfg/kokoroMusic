@@ -1,12 +1,13 @@
 .main-footer-div{
-    position: relative;
-    height: 11vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16.5vh;
     display: flex;
     justify-content: center;
     color:black;
     background: radial-gradient(ellipse at center, rgba(243,253,236,1) 0%, rgba(177,196,110,1) 100%);
     align-items: center;
-   
 }
 
 .margin-left-20{
@@ -28,7 +29,6 @@
     color: black;
     margin-left: 15px;
     font-style: normal;
-    font-family: monospace;
     font-size: 15px;
    
 }

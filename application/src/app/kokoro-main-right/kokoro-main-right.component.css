@@ -2,23 +2,53 @@
     margin-left: 15px;
     margin-right: 15px;
     text-align: left;
-    }
+    height: 60vh;
+    overflow-y: auto;
+}
 
 .img-group{
     border-radius: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
    
 }
 .detalle {
     font-style: normal;
-    margin-left: 120px;
-    font-family: monospace;
-    
-   
-   
+    width: 450px;
 }
+
 .material-icons{
     color: #323F34;
     vertical-align: middle;
-    font-size: 45px;
+    font-size: 25px;
+}
+
+.main-item{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.text-info{
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
 }

@@ -7,11 +7,11 @@
         <img class="img-group"width="450" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
         </div>
         <div class="detalle">
-        <p><i class="material-icons">face</i><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</p>
-        <p><i class="material-icons">album</i><b>Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</p>
-        <p><i class="material-icons">event</i><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</p>
-        <p><i class="material-icons">mic</i><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</p>
-        <p><i class="material-icons">contact_support</i><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</p>
+            <div class="main-item"><i class="material-icons">face</i><span class="text-info"><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</span></div>
+            <div class="main-item"><i class="material-icons">album</i><span class="text-info"><b>Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</span></div>
+            <div class="main-item"><i class="material-icons">event</i><span class="text-info"><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</span></div>
+            <div class="main-item"><i class="material-icons">mic</i><span class="text-info"><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</span></div>
+            <div class="main-item"><i class="material-icons">contact_support</i><span class="text-info"><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</span></div>
         </div>
     </div>
     

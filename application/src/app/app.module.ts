@@ -11,12 +11,14 @@ import { KokoroMainLeftSongListComponent } from './kokoro-main-left-song-list/ko
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { KokoroSearcherComponent } from './kokoro-searcher/kokoro-searcher.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 /* Angular Material */
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { SearchPipe } from './pipes/search.pipe';
+import {MatSliderModule} from '@angular/material/slider';
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
     declarations: [
@@ -36,7 +38,9 @@ import { SearchPipe } from './pipes/search.pipe';
         MatFormFieldModule,
         MatInputModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        MatSliderModule,
+        MatIconModule
     ],
     providers: [],
     bootstrap: [AppComponent]
