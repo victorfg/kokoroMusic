@@ -33,7 +33,12 @@
         <span>{{durationCalcul}}</span>
     </div>
     <div class="center-element margin-left-20">
-        <span>Volumen</span>
+        <span><i class="material-icons md-48 reproductor">equalizer</i>Volumen</span>
+        <div class="mdc-slider" tabindex="0" role="slider"
+        aria-valuemin="-5" aria-valuemax="50" aria-valuenow="10"
+        aria-label="Select Value">
+        </div>
         <input type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolume($event)">
+        
     </div>
 </div>
