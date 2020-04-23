@@ -19,9 +19,13 @@
    
 }
 
+.img-group{
+  border-radius: 25px;
+}
 .img-album{
     position: absolute;
     left: 40px;
+    
     
 }
 
