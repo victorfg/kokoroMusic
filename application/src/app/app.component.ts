@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CANCIONES } from './canciones/canciones';
 import { RouteStateServiceService } from './service/route-state.service';
+import { GetDataSongsService } from './service/get-data-songs.service';
 import { Observable } from 'rxjs';
 @Component({
     selector: 'app-root',
@@ -8,11 +8,12 @@ import { Observable } from 'rxjs';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    canciones = CANCIONES;
+    getAllSongs = [];
     pathParam: Observable<string>;
-    constructor(private routeStateService: RouteStateServiceService) { }
+    constructor(private routeStateService: RouteStateServiceService, private dataSongsService: GetDataSongsService) { }
 
     ngOnInit() {
         this.pathParam = this.routeStateService.pathParam;
+        this.getAllSongs = this.dataSongsService.getSongs();
     }
 }

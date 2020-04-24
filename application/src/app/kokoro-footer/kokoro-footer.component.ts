@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { CANCIONES } from '../canciones/canciones';
 import { RouteStateServiceService } from '../service/route-state.service';
 import { Observable } from 'rxjs';
 import * as moment from 'moment';
@@ -10,6 +9,8 @@ import * as moment from 'moment';
     styleUrls: ['./kokoro-footer.component.css']
 })
 export class KokoroFooterComponent implements OnInit {
+    @Input() allSongs;
+
     audioObj = new Audio();
     audioEvents = [
         "ended",
@@ -28,11 +29,12 @@ export class KokoroFooterComponent implements OnInit {
     currentTime:number;
     seek = 0;  
     selectedSong: string;
-    canciones = CANCIONES;
+    canciones = [];
     pathParam: Observable<number>;
     constructor(private routeStateService: RouteStateServiceService) { }
 
     ngOnInit() {
+        this.canciones = this.allSongs;
         this.routeStateService.getMyObs().subscribe(data => {
             this.selectedSong = data;
             if (data != null){
