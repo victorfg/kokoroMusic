@@ -22,18 +22,18 @@
             </div>
         </div>
     </div>
-    <div *ngIf="selectedSong != null">
+    <div>
         <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="play()"><i class="material-icons md-48 reproductor">play_arrow</i></button>
         <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="pause()"><i class="material-icons md-48 reproductor">pause</i></button>
         <button class="mdl-button mdl-button--raised mdl-button--colored" (click)="stop()"><i class="material-icons md-48 reproductor">stop</i></button>
     </div>
-    <div *ngIf="selectedSong != null" class="center-element margin-left-20">
+    <div class="center-element margin-left-20">
         <span>{{currentTimeCalcul}}</span>
         <mat-slider min="0" max="{{duration}}" [value]="seek" (input)="setSeekTo($event)"></mat-slider>
         <span>{{durationCalcul}}</span>
     </div>
 
-    <div *ngIf="selectedSong != null" class="center-element margin-left-20">
+    <div class="center-element margin-left-20">
         <span>Volumen</span>
         <mat-slider min="0" max="1" step="0.01" value="1" (input)="setVolume($event)"></mat-slider>
     </div>
