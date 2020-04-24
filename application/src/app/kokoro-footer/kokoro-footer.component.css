@@ -12,11 +12,20 @@
 
 .margin-left-20{
     margin-left: 20px;
+    font-style: normal;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    margin-right: 15px;
+    
+   
 }
 
+.img-group{
+  border-radius: 25px;
+}
 .img-album{
     position: absolute;
     left: 40px;
+    
     
 }
 
@@ -30,7 +39,6 @@
     margin-left: 15px;
     font-style: normal;
     font-size: 15px;
-   
 }
 
 .center-element{
@@ -51,17 +59,19 @@
 }
 .material-icons.md-48{
     font-size: 45px;
+    vertical-align: middle;
+    color: #323F34;
 }
 .material-icons.reproductor{
     color: #323F34;
 }
 
 ::ng-deep .mat-accent .mat-slider-thumb {
-    background-color: rgb(0,150,136);
+  background-color: rgb(0,150,136);
 } 
 ::ng-deep .mat-accent .mat-slider-thumb-label {
-    background-color: rgb(0,150,136);
+  background-color: rgb(0,150,136);
 } 
 ::ng-deep .mat-accent .mat-slider-track-fill {
-    background-color: rgb(0,150,136);
+  background-color: rgb(0,150,136);
 } 

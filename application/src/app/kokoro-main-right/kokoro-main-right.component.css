@@ -19,7 +19,8 @@
 .material-icons{
     color: #323F34;
     vertical-align: middle;
-    font-size: 25px;
+    font-size: 40px;
+    margin-right: 20px;
 }
 
 .main-item{
@@ -30,6 +31,8 @@
 
 .text-info{
   font-size: 16px;
+  text-align : justify;
+  margin-right: 10px;;
 }
 
 ::-webkit-scrollbar {

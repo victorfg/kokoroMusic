@@ -32,6 +32,7 @@
         <mat-slider min="0" max="{{duration}}" [value]="seek" (input)="setSeekTo($event)"></mat-slider>
         <span>{{durationCalcul}}</span>
     </div>
+
     <div *ngIf="selectedSong != null" class="center-element margin-left-20">
         <span>Volumen</span>
         <mat-slider min="0" max="1" step="0.01" value="1" (input)="setVolume($event)"></mat-slider>

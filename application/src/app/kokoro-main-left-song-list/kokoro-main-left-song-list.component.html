@@ -1,12 +1,12 @@
 <ul>
     <li *ngFor="let cancion of allSongs | search:filtro_valor" (click)="clickSongItem(cancion)">
          <img class="img-song"width="120" src="{{ cancion.urlFotoAlbum }}" alt="180" />
-            <div class="margin-left-25 widht-50">
-            <div><b>{{ cancion.nombreCancion}}</b></div>
-            <div>{{ cancion.nombreGrupo}}</div>
-            <div>{{ cancion.fechaCancion}}</div>
-        </div>
-        <div class="text-align-end widht-50">
+                <div class="margin-left-25 widht-50">
+                <div><b>{{ cancion.nombreCancion}}</b></div>
+                <div>{{ cancion.nombreGrupo}}</div>
+                <div>{{ cancion.fechaCancion}}</div>
+            </div>
+            <div class="text-align-end widht-50">
             <div>{{ cancion.generoMusical}}</div>
             <div>{{ cancion.duracionCancion}}</div>
         </div>
