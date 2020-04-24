@@ -63,9 +63,23 @@
     color: #323F34;
 }
 .material-icons.reproductor{
+    font-size: 45px;
+    vertical-align: middle;
     color: #323F34;
+    background-color: rgb(0,150,136);
+    border-radius: 25px;
+   
 }
 
+.material-icons.reproductor.volumen{
+    font-size: 45px;
+    vertical-align: middle;
+    color: #323F34;
+    background-color: rgb(0,150,136);
+    border-radius: 25px;
+    margin-right: 20px;
+   
+}
 ::ng-deep .mat-accent .mat-slider-thumb {
   background-color: rgb(0,150,136);
 } 
