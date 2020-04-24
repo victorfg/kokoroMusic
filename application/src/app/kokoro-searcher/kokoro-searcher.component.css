@@ -10,3 +10,11 @@
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-underline {
     display: none;
 }
+
+::ng-deep .mat-form-field.mat-focused label {
+    display: none;
+}
+
+::ng-deep .mat-form-field.mat-focused input {
+    font-size: 50px;
+}

@@ -55,11 +55,11 @@ export class KokoroFooterComponent implements OnInit {
     }
 
     setVolume(ev){
-        this.audioObj.volume = ev.target.value;
+        this.audioObj.volume = ev.value;
     }
 
     setSeekTo(ev){
-        this.audioObj.currentTime = ev.target.value;
+        this.audioObj.currentTime = ev.value;
     }
 
     streamObserver(url){

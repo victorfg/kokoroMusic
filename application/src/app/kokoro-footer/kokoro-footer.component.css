@@ -38,6 +38,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.center-element span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .mdl-button{
     margin-left: 15px;
     border-radius: 25px;
@@ -48,4 +54,14 @@
 }
 .material-icons.reproductor{
     color: #323F34;
-}   
+}
+
+::ng-deep .mat-accent .mat-slider-thumb {
+    background-color: rgb(0,150,136);
+} 
+::ng-deep .mat-accent .mat-slider-thumb-label {
+    background-color: rgb(0,150,136);
+} 
+::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: rgb(0,150,136);
+} 
