@@ -14,8 +14,8 @@
 .detalle {
     font-style: normal;
     width: 450px;
+    opacity: 0.75;
 }
-
 .material-icons{
     color: #323F34;
     vertical-align: middle;
