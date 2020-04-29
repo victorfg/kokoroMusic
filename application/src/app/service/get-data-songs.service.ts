@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Cancion } from '../canciones/cancion';
-import { CANCIONES } from '../canciones/canciones';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class GetDataSongsService {
 
-  constructor() { }
+    constructor(private firestore: AngularFirestore) { }
 
-  getSongs():Cancion[]{
-      return CANCIONES;
-  }
+    getSongs() {
+        return this.firestore.collection('Canciones').snapshotChanges();
+    }
 }

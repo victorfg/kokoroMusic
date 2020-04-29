@@ -13,6 +13,12 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { KokoroSearcherComponent } from './kokoro-searcher/kokoro-searcher.component';
 import { SearchPipe } from './pipes/search.pipe';
 
+/* Firebase */
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+
 /* Angular Material */
 
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -40,7 +46,9 @@ import { MatIconModule } from "@angular/material/icon";
         ReactiveFormsModule,
         FormsModule,
         MatSliderModule,
-        MatIconModule
+        MatIconModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        AngularFireDatabaseModule
     ],
     providers: [],
     bootstrap: [AppComponent]

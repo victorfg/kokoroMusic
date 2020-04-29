@@ -6,17 +6,17 @@
 
 
 <div class="main-footer-div">
-    <div class="img-album" *ngIf="selectedSong != null">
+    <div class="img-album" *ngIf="allSongs != null && selectedSong != null">
         <div class="display-flex">
             <div>
-                <img class="img-group"width="75" src="{{ canciones[selectedSong].urlFotoAlbum }}" alt="180"/>
+                <img class="img-group"width="75" src="{{ allSongs[selectedSong].urlFotoAlbum }}" alt="180"/>
             </div>
             <div class="text-info-song">
                 <div>
-                    {{ canciones[selectedSong].nombreGrupo }}
+                    {{ allSongs[selectedSong].nombreGrupo }}
                 </div>
                 <div><b>
-                    {{ canciones[selectedSong].nombreCancion }}
+                    {{ allSongs[selectedSong].nombreCancion }}
                     </b>
                 </div>
             </div>
