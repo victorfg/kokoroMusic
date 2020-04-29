@@ -6,6 +6,18 @@
 .main-input-text{
     color:black;
 }
+.filtro{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 5.6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
 
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-underline {
     display: none;

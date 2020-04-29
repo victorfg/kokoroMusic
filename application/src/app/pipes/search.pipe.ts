@@ -7,8 +7,17 @@ export class SearchPipe implements PipeTransform {
 
     transform(lista: any[], texto: string): any[] {
         if (!texto) return lista
-        return lista.filter(
-            user => user.nombreCancion.toUpperCase().includes(texto.toUpperCase())
-        )
+        return lista.filter(user => {
+            const textoToUpper: string = texto.toLocaleUpperCase();
+            let nombreGrupo: string = "";
+
+            if (user.nombreGrupo != undefined) {
+                nombreGrupo = user.nombreGrupo.toLocaleUpperCase();
+            }
+            if (user.nombreCancion.toUpperCase().includes(textoToUpper) || nombreGrupo.includes(textoToUpper)) {
+                return true;
+            }
+            return false;
+        });
     }
 }
