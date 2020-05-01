@@ -17,3 +17,7 @@ body {
 .main-left-div .material-icons{
     position: absolute;
 }
+
+.mat-form-field-disabled .mat-form-field-underline {
+    display: none;
+}

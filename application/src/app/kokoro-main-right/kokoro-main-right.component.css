@@ -24,15 +24,17 @@
 }
 
 .main-item{
-  margin-top: 10px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .text-info{
   font-size: 16px;
   text-align : justify;
-  margin-right: 10px;;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -54,4 +56,29 @@
 }
 ::-webkit-scrollbar-corner {
   background-color: transparent;
+}
+
+.mat-input-element:disabled{
+  color: black;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.mat-input-element{
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.edit-button{
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.return-button{
+  font-size: 22px;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
 }

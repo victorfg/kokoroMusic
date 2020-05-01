@@ -36,7 +36,7 @@ export class KokoroFooterComponent implements OnInit {
     ngOnInit() {
         this.routeStateService.getMyObs().subscribe(data => {
             this.selectedSong = data;
-            if (data != null){
+            if (data != null && this.allSongs){
                 this.streamObserver(this.allSongs[this.selectedSong].urlCancion).subscribe();
             }
         })

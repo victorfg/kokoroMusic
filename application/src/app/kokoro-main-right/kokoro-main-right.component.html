@@ -1,19 +1,77 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-<div class="main-div-items">
-    <div *ngIf="canciones[pathParam | async]">
+<div class="main-div-items" *ngIf="songs">
+    <div *ngIf="songs[pathParam | async]">
         <div class=img align=center>
-        <img class="img-group"width="450" src="{{ canciones[pathParam | async].urlArtista }}" alt="180"/>
+            <img class="img-group"width="450" src="{{ songs[pathParam | async].urlArtista }}" alt="180"/>
         </div>
-        <div class="detalle">
-            <div class="main-item"><i class="material-icons">face</i><span class="text-info"><b>Artista: </b>{{ canciones[pathParam | async].nombreGrupo }}</span></div>
-            <div class="main-item"><i class="material-icons">album</i><span class="text-info"><b>Albúm: </b>{{ canciones[pathParam | async].nombreAlbum }}</span></div>
-            <div class="main-item"><i class="material-icons">event</i><span class="text-info"><b>Fecha: </b>{{ canciones[pathParam | async].fechaCancion }}</span></div>
-            <div class="main-item"><i class="material-icons">mic</i><span class="text-info"><b>Género Musical: </b>{{ canciones[pathParam | async].generoMusical }}</span></div>
-            <div class="main-item"><i class="material-icons">contact_support</i><span class="text-info"><b>Info: </b>{{ canciones[pathParam | async].detalleArtista }}</span></div>
+        <div class="detalle">         
+            <div class="main-item">
+                <i class="material-icons">face</i>
+                <span class="text-info"><b>Artista: </b>
+                    <mat-form-field> 
+                        <input (keyup)="focusoutArtista($event)" matInput [disabled]='!inputValuesEdit.artista' class="main-input-text" [value]="songs[pathParam | async].nombreGrupo">
+                    </mat-form-field> 
+                    <i *ngIf="!inputValuesEdit.artista" class="material-icons edit-button" (click)="editInput(0)">edit</i>
+                    <i *ngIf="inputValuesEdit.artista" class="material-icons return-button" (click)="editInput(0)">clear</i>
+                    <i *ngIf="inputValuesEdit.artista" class="material-icons edit-button" (click)="updateSong(0)">save</i>
+                </span>
+            </div>
+            <div class="main-item">
+                <i class="material-icons">album</i>
+                <span class="text-info"><b>Albúm: </b>
+                    <mat-form-field> 
+                        <input (keyup)="focusoutAlbum($event)" matInput [disabled]='!inputValuesEdit.album' class="main-input-text" value="{{songs[pathParam | async].nombreAlbum}}">
+                    </mat-form-field> 
+                    <i *ngIf="!inputValuesEdit.album" class="material-icons edit-button"(click)="editInput(1)">edit</i>
+                    <i *ngIf="inputValuesEdit.album" class="material-icons return-button" (click)="editInput(1)">clear</i>
+                    <i *ngIf="inputValuesEdit.album" class="material-icons edit-button" (click)="updateSong(1)">save</i>
+                </span>
+            </div>
+            <div class="main-item">
+                <i class="material-icons">event</i>
+                <span class="text-info"><b>Fecha: </b>
+                    <mat-form-field> 
+                        <input (keyup)="focusoutFecha($event)" matInput [disabled]='!inputValuesEdit.fecha' class="main-input-text" value="{{songs[pathParam | async].fechaCancion}}">
+                    </mat-form-field> 
+                    <i *ngIf="!inputValuesEdit.fecha" class="material-icons edit-button"(click)="editInput(2)">edit</i>
+                    <i *ngIf="inputValuesEdit.fecha" class="material-icons return-button" (click)="editInput(2)">clear</i>
+                    <i *ngIf="inputValuesEdit.fecha" class="material-icons edit-button" (click)="updateSong(2)">save</i>
+                </span>
+            </div>
+            <div class="main-item">
+                <i class="material-icons">mic</i>
+                <span class="text-info"><b>Género Musical: </b>
+                    <mat-form-field> 
+                        <input (keyup)="focusoutGenero($event)" matInput [disabled]='!inputValuesEdit.generoMusical' class="main-input-text" value="{{songs[pathParam | async].generoMusical}}">
+                    </mat-form-field> 
+                    <i *ngIf="!inputValuesEdit.generoMusical" class="material-icons edit-button"(click)="editInput(3)">edit</i>
+                    <i *ngIf="inputValuesEdit.generoMusical" class="material-icons return-button" (click)="editInput(3)">clear</i>
+                    <i *ngIf="inputValuesEdit.generoMusical" class="material-icons edit-button" (click)="updateSong(3)">save</i>
+                </span>
+            </div>
+            <div class="main-item">
+                <i class="material-icons">contact_support</i>
+                <span class="text-info"><b>Info: </b>
+                    <mat-form-field>
+                        <textarea
+                            (keyup)="focusoutInfo($event)" 
+                            matInput 
+                            value="{{songs[pathParam | async].detalleArtista}}"
+                            cdkTextareaAutosize
+                            cdkAutosizeMinRows="3"
+                            cdkAutosizeMaxRows="10"
+                            [disabled]='!inputValuesEdit.informacion'>
+                        </textarea>
+                    </mat-form-field> 
+                    
+                    <i *ngIf="!inputValuesEdit.informacion" class="material-icons edit-button"(click)="editInput(4)">edit</i>
+                    <i *ngIf="inputValuesEdit.informacion" class="material-icons return-button" (click)="editInput(4)">clear</i>
+                    <i *ngIf="inputValuesEdit.informacion" class="material-icons edit-button" (click)="updateSong(4)">save</i>
+                </span>
+            </div> 
         </div>
     </div>
-    
 </div>
  

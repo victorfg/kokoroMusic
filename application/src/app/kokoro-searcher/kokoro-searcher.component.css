@@ -15,6 +15,6 @@
     display: none;
 }
 
-::ng-deep .mat-form-field.mat-focused input {
+.mat-form-field.mat-focused input {
     font-size: 50px;
 }
