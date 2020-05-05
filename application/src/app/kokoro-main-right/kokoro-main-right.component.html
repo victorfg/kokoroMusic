@@ -51,16 +51,19 @@
             <div class="main-item">
                 <i class="material-icons">contact_support</i>
                 <span class="text-info"><b>Info: </b>
-                    <mat-form-field>
-                        <textarea
-                            (keyup)="focusoutInfo($event)" 
-                            matInput 
-                            value="{{songs[pathParam | async].detalleArtista}}"
-                            cdkTextareaAutosize
-                            cdkAutosizeMinRows="3"
-                            cdkAutosizeMaxRows="10"
-                            [disabled]='!inputValuesEdit.informacion'>
-                        </textarea>
+                    <mat-form-field style="width: 400px;">
+                        <div style="text-align:justify;">
+                            <textarea
+                                text-align="justify"
+                                (keyup)="focusoutInfo($event)" 
+                                matInput 
+                                value="{{songs[pathParam | async].detalleArtista}}"
+                                cdkTextareaAutosize
+                                cdkAutosizeMinRows="3"
+                                cdkAutosizeMaxRows="10"
+                                [disabled]='!inputValuesEdit.informacion'>
+                            </textarea>
+                        </div>
                     </mat-form-field> 
                     
                     <i *ngIf="!inputValuesEdit.informacion" class="material-icons edit-button"(click)="editInput(4)">edit</i>
